@@ -36,8 +36,8 @@ public class Box {
         this.length = length;
     }
 
-    Box increase() {
-       return new Box(width * 2, height * 2, length * 2);
+    Box increase(int i) {
+       return new Box(width * i, height * i, length * i);
     }
 
     double volume() {
