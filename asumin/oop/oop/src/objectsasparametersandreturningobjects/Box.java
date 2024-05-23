@@ -38,15 +38,15 @@ public class Box {
         System.out.println(volume());
     }
 
-    void compare(Box box) {
+    int compare(Box box) {
         double thisVolume = volume();
         double boxVolume = box.volume();
         if (thisVolume > boxVolume) {
-            System.out.println("Наша коробка больше");
+            return 1;
         } else if (thisVolume < boxVolume) {
-            System.out.println("Наша коробка меньше");
+            return -1;
         } else {
-            System.out.println("Коробки равны");
+            return 0;
         }
     }
 }
