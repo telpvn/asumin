@@ -20,8 +20,9 @@ public class ArrayListMethods2 {
         System.out.println(studentList);
         System.out.println();
         Student st6 = new Student("Mariya", 'f', 23, 3, 7.4);
-        studentList.remove(st6);
-        System.out.println(studentList);
+//        studentList.remove(st6);
+        int index = studentList.indexOf(st6);
+        System.out.println(index);
     }
 }
 
